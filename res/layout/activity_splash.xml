@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/background" >
+    
+    <ImageView 
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/splash_image_logo_width"
+        android:layout_height="@dimen/splash_image_logo_height"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/logo_image"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_layout_title_bar_height"
+        android:background="@color/navigation_bar_back_color" >
+
+        <ImageView
+            android:id="@+id/but_setting"
+            android:layout_width="@dimen/profile_but_setting_width"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/profile_but_setting_padding"
+            android:src="@drawable/btn_header_setting_bg"
+            android:contentDescription="@string/profile_image" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/profile_text_title_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/zapp_profile_test"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/profile_text_title_font_size" />
+
+        <ImageView
+            android:id="@+id/but_zapp"
+            android:layout_width="@dimen/profile_but_zapp_width"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/profile_but_zapp_padding"
+            android:src="@drawable/btn_header_zapp_bg"
+            android:contentDescription="@string/profile_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view_hline1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline1_height"
+                android:background="@color/navigation_bar_vline1_color" />
+
+            <View
+                android:id="@+id/view_hline2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline2_height"
+                android:background="@color/navigation_bar_vline2_color" />
+
+            <View
+                android:id="@+id/view_hline3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline3_height"
+                android:background="@color/navigation_bar_vline3_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/layout_pager"
+        android:layout_width="match_parent"        
+        android:layout_height="@dimen/profile_layout_pager_height"
+        android:layout_below="@+id/layout_title_bar" >
+        
+         <android.support.v4.view.ViewPager
+	        android:id="@+id/pager_photo"
+	        android:layout_width="@dimen/profile_pager_photo_size"
+	        android:layout_height="@dimen/profile_pager_photo_size"
+	        android:layout_marginTop="@dimen/profile_pager_photo_topMargin"
+	        android:layout_centerInParent="true" />
+         
+	</RelativeLayout>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/indicator_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/profile_indicator_photo_topMargin" />
+    
+    <RelativeLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"        
+        android:layout_height="@dimen/profile_layout_buttons_height"
+        android:layout_below="@+id/layout_pager"
+        android:background="@color/comment_text_input_back_color">
+
+        <View
+            android:id="@+id/view_hline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/navigation_bar_vline3_color" />
+
+        <ImageView
+            android:id="@+id/but_optionmine"
+            android:layout_width="@dimen/profile_but_optionmine_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_profile_mine_bg"
+            android:contentDescription="@string/profile_image" />
+        
+        <TextView
+            android:id="@+id/text_minenum"
+            android:layout_width="@dimen/profile_text_minenum_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/profile_text_minenum_leftMargin"
+            android:gravity="center"            
+            android:textColor="@color/profile_count_color"
+            android:textSize="@dimen/profile_text_minenum_font_size" />
+
+        <View
+            android:id="@+id/view_vline"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/navigation_bar_vline3_color" />
+        
+        <ImageView
+            android:id="@+id/but_optionliked"
+            android:layout_width="@dimen/profile_but_optionliked_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_profile_liked_bg"
+            android:contentDescription="@string/profile_image"/>
+        
+        <TextView
+            android:id="@+id/text_likenum"
+            android:layout_width="@dimen/profile_text_likenum_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"            
+            android:textColor="@color/profile_count_color"
+            android:textSize="@dimen/profile_text_likenum_font_size" />
+            
+    </RelativeLayout>
+
+    <com.iliayugai.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_buttons"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderBackground="@android:color/transparent"
+        ptr:ptrHeaderTextColor="@color/pull_down_color"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" />
+
+
+</RelativeLayout>

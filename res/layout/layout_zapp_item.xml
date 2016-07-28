@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/zapp_layout_root_paddingTop"
+    android:paddingBottom="@dimen/zapp_layout_root_paddingBottom"
+    android:orientation="vertical" >
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zapp_top_border_color" />
+    
+    <RelativeLayout
+        android:id="@+id/layout_zapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zapp_back_color" >
+        
+        <ImageView
+            android:id="@+id/but_delete"
+            android:layout_width="@dimen/zapp_but_delete_width"
+            android:layout_height="@dimen/zapp_but_delete_height"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zapp_but_delete_leftMargin"
+            android:paddingBottom="@dimen/zapp_but_delete_paddingBottom"
+            android:paddingTop="@dimen/zapp_but_delete_paddingTop"
+            android:src="@drawable/btn_zapp_delete"
+            android:contentDescription="@string/zapp_delete" />
+
+        <ImageView
+            android:id="@+id/but_report"
+            android:layout_width="@dimen/zapp_but_report_width"
+            android:layout_height="@dimen/zapp_but_report_height"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zapp_but_report_leftMargin"
+            android:paddingBottom="@dimen/zapp_but_report_paddingBottom"
+            android:paddingTop="@dimen/zapp_but_report_paddingTop"
+            android:src="@drawable/btn_zapp_report"
+            android:contentDescription="@string/zapp_delete" />
+
+        <ImageView
+            android:id="@+id/but_share"
+            android:layout_width="@dimen/zapp_but_share_width"
+            android:layout_height="@dimen/zapp_but_share_height"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/zapp_but_share_leftMargin"
+            android:paddingBottom="@dimen/zapp_but_share_paddingBottom"
+            android:paddingTop="@dimen/zapp_but_share_paddingTop"
+            android:src="@drawable/btn_zapp_share"
+            android:contentDescription="@string/zapp_delete" />
+
+        <RelativeLayout
+            android:id="@+id/layout_front"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="@dimen/zapp_layout_front_paddingBottom"
+        	android:paddingTop="@dimen/zapp_layout_front_paddingTop"
+        	android:background="@android:color/white" >
+
+            <TextView
+	            android:id="@+id/text_content"
+	            android:layout_width="@dimen/zapp_text_content_width"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/zapp_text_content_leftMargin"
+	            android:layout_centerVertical="true"
+	            android:text="@string/zapp_test"
+	            android:lineSpacingMultiplier="1.2"
+	            android:textSize="@dimen/zapp_text_content_font_size" />
+
+            <LinearLayout
+                android:id="@+id/layout_wave"
+                android:layout_width="@dimen/zapp_layout_wave_width"
+                android:layout_height="@dimen/zapp_layout_wave_height"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/image_wave"
+                    android:layout_width="@dimen/zapp_image_wave_width"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/alert_play_wave"
+                    android:contentDescription="@string/zapp_delete"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/but_play"
+                android:layout_width="@dimen/zapp_but_play_size"
+	        	android:layout_height="@dimen/zapp_but_play_size"
+	        	android:adjustViewBounds="true"
+	        	android:layout_centerVertical="true"
+	        	android:layout_marginLeft="@dimen/zapp_but_play_leftMargin"
+	        	android:paddingBottom="@dimen/zapp_but_play_paddingBottom"
+	        	android:paddingTop="@dimen/zapp_but_play_paddingTop"
+	        	android:src="@drawable/btn_zapp_alert_play"
+	        	android:contentDescription="@string/zapp_delete" />
+
+        </RelativeLayout>
+
+	</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zapp_top_border_color" />
+    
+    <RelativeLayout
+        android:id="@+id/layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zapp_layout_user_height"
+        android:background="@color/zapp_user_back_color" >
+        
+        <com.parse.ParseImageView 
+            android:id="@+id/but_user" 
+            android:layout_width="@dimen/zapp_but_user_size"
+        	android:layout_height="@dimen/zapp_but_user_size"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_but_user_leftMargin"
+        	android:padding="@dimen/zapp_but_user_padding"
+        	android:src="@drawable/profile_photo_default"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <TextView
+           android:id="@+id/text_zappby"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/zapp_text_zappby_leftMargin"
+           android:layout_marginTop="@dimen/zapp_text_zappby_leftTop"
+           android:text="@string/zapp_by"
+           android:textColor="@color/zapp_by_color"
+           android:textSize="@dimen/zapp_text_zappby_font_size" />
+        
+        <TextView
+           android:id="@+id/text_username"
+           android:layout_width="@dimen/zapp_text_username_width"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/zapp_text_username_leftMargin"
+           android:layout_marginTop="@dimen/zapp_text_username_topMargin"
+           android:text="@string/zapp_username_test"
+           android:textSize="@dimen/zapp_text_username_font_size" />
+        
+        <ImageView 
+            android:id="@+id/but_like" 
+            android:layout_width="@dimen/zapp_but_like_size"
+        	android:layout_height="@dimen/zapp_but_like_size"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_but_like_leftMargin"
+        	android:paddingBottom="@dimen/zapp_but_like_paddingBottom"
+        	android:paddingTop="@dimen/zapp_but_like_paddingTop"
+        	android:src="@drawable/btn_zapp_unliked"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <ImageView 
+            android:id="@+id/but_comment" 
+            android:layout_width="@dimen/zapp_but_comment_size"
+        	android:layout_height="@dimen/zapp_but_comment_size"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_but_comment_leftMargin"
+        	android:paddingBottom="@dimen/zapp_but_comment_paddingBottom"
+        	android:paddingTop="@dimen/zapp_but_comment_paddingTop"
+        	android:src="@drawable/btn_zapp_uncommented"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <TextView
+            android:id="@+id/text_commentnum" 
+            android:layout_width="@dimen/zapp_text_commentnum_size"
+        	android:layout_height="@dimen/zapp_text_commentnum_size"
+        	android:gravity="center"
+        	android:layout_centerVertical="true"
+        	android:textColor="@android:color/white"
+        	android:textSize="@dimen/zapp_text_commentnum_font_size"
+        	android:layout_marginLeft="@dimen/zapp_text_commentnum_leftMargin"
+        	android:paddingBottom="@dimen/zapp_text_commentnum_paddingBottom"
+        	android:paddingTop="@dimen/zapp_text_commentnum_paddingTop" />
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zapp_user_border_color" />
+    
+    <RelativeLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zapp_layout_info_height"
+        android:background="@color/zapp_user_back_color" >
+        
+        <ImageView 
+            android:id="@+id/img_location" 
+            android:layout_width="@dimen/zapp_img_location_width"
+        	android:layout_height="@dimen/zapp_img_location_height"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_img_location_leftMargin"
+        	android:src="@drawable/zapp_location"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <TextView
+           android:id="@+id/text_distance"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/zapp_text_distance_leftMargin"
+           android:text="@string/zapp_distance_test"
+           android:textColor="@color/zapp_info_color"
+           android:textSize="@dimen/zapp_text_distance_font_size" />
+        
+        <ImageView 
+            android:id="@+id/img_time" 
+            android:layout_width="@dimen/zapp_img_time_size"
+        	android:layout_height="@dimen/zapp_img_time_size"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_img_time_leftMargin"
+        	android:src="@drawable/zapp_time"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <TextView
+           android:id="@+id/text_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/zapp_text_time_leftMargin"
+           android:text="@string/zapp_time_test"
+           android:textColor="@color/zapp_info_color"
+           android:textSize="@dimen/zapp_text_time_font_size" />
+        
+        <ImageView 
+            android:id="@+id/img_playnum" 
+            android:layout_width="@dimen/zapp_img_playnum_size"
+        	android:layout_height="@dimen/zapp_img_playnum_size"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_img_playnum_leftMargin"
+        	android:src="@drawable/zapp_played"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <TextView
+           android:id="@+id/text_playnum"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/zapp_text_playnum_leftMargin"
+           android:text="@string/zapp_playnum_test"
+           android:textColor="@color/zapp_info_color"
+           android:textSize="@dimen/zapp_text_playnum_font_size" />
+        
+        <ImageView 
+            android:id="@+id/img_likenum" 
+            android:layout_width="@dimen/zapp_img_likenum_size"
+        	android:layout_height="@dimen/zapp_img_likenum_size"
+        	android:adjustViewBounds="true"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="@dimen/zapp_img_likenum_leftMargin"
+        	android:src="@drawable/zapp_like"
+        	android:contentDescription="@string/zapp_delete" />
+        
+        <TextView
+           android:id="@+id/text_likenum"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/zapp_text_likenum_leftMargin"
+           android:text="@string/zapp_likenum_test"
+           android:textColor="@color/zapp_info_color"
+           android:textSize="@dimen/zapp_text_likenum_font_size" />
+        
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zapp_top_border_color" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zapp_bottom_border_color1" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zapp_bottom_border_color2" />
+
+</LinearLayout>

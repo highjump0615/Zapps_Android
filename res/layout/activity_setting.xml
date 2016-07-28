@@ -1,0 +1,446 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comment_text_input_back_color"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="0dip"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_layout_title_bar_height"
+        android:background="@color/navigation_bar_back_color" >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/setting_text_title_font_size" />
+
+        <Button
+            android:id="@+id/but_cancel"
+            android:layout_width="@dimen/setting_but_cancel_width"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/setting_but_cancel_font_size"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            android:text="@string/share_cancel"
+            android:gravity="center"
+            android:textColor="@drawable/transparent_button_color" />
+
+        <Button
+            android:id="@+id/but_save"
+            android:layout_width="@dimen/setting_but_save_width"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/setting_but_save_font_size"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="@string/setting_save"
+            android:gravity="center"
+            android:textColor="@drawable/transparent_button_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view_hline1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline1_height"
+                android:background="@color/navigation_bar_vline1_color" />
+
+            <View
+                android:id="@+id/view_hline2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline2_height"
+                android:background="@color/navigation_bar_vline2_color" />
+
+            <View
+                android:id="@+id/view_hline3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline3_height"
+                android:background="@color/navigation_bar_vline3_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title_bar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.parse.ParseImageView
+                android:id="@+id/img_photomain"
+                android:layout_width="@dimen/setting_img_photomain_size"
+                android:layout_height="@dimen/setting_img_photomain_size"
+                android:layout_marginLeft="@dimen/setting_img_photomain_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_photomain_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/profile_photo_default"
+                android:background="@android:color/background_dark"
+                android:contentDescription="@string/profile_image" />
+
+            <com.parse.ParseImageView
+                android:id="@+id/img_photo1"
+                android:layout_width="@dimen/setting_img_photo1_size"
+                android:layout_height="@dimen/setting_img_photo1_size"
+                android:layout_marginLeft="@dimen/setting_img_photo1_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_photo1_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_no_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <ImageView
+                android:id="@+id/img_deletephoto1"
+                android:layout_width="@dimen/setting_img_deletephoto1_size"
+                android:layout_height="@dimen/setting_img_deletephoto1_size"
+                android:layout_marginLeft="@dimen/setting_img_deletephoto1_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_deletephoto1_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_delete_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <com.parse.ParseImageView
+                android:id="@+id/img_photo2"
+                android:layout_width="@dimen/setting_img_photo2_size"
+                android:layout_height="@dimen/setting_img_photo2_size"
+                android:layout_marginLeft="@dimen/setting_img_photo2_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_photo2_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_no_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <ImageView
+                android:id="@+id/img_deletephoto2"
+                android:layout_width="@dimen/setting_img_deletephoto2_size"
+                android:layout_height="@dimen/setting_img_deletephoto2_size"
+                android:layout_marginLeft="@dimen/setting_img_deletephoto2_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_deletephoto2_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_delete_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <com.parse.ParseImageView
+                android:id="@+id/img_photo3"
+                android:layout_width="@dimen/setting_img_photo3_size"
+                android:layout_height="@dimen/setting_img_photo3_size"
+                android:layout_marginLeft="@dimen/setting_img_photo3_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_photo3_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_no_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <ImageView
+                android:id="@+id/img_deletephoto3"
+                android:layout_width="@dimen/setting_img_deletephoto3_size"
+                android:layout_height="@dimen/setting_img_deletephoto3_size"
+                android:layout_marginLeft="@dimen/setting_img_deletephoto3_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_deletephoto3_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_delete_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <com.parse.ParseImageView
+                android:id="@+id/img_photo4"
+                android:layout_width="@dimen/setting_img_photo4_size"
+                android:layout_height="@dimen/setting_img_photo4_size"
+                android:layout_marginLeft="@dimen/setting_img_photo4_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_photo4_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_no_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <ImageView
+                android:id="@+id/img_deletephoto4"
+                android:layout_width="@dimen/setting_img_deletephoto4_size"
+                android:layout_height="@dimen/setting_img_deletephoto4_size"
+                android:layout_marginLeft="@dimen/setting_img_deletephoto4_leftMargin"
+                android:layout_marginTop="@dimen/setting_img_deletephoto4_topMargin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/btn_psetting_delete_pic"
+                android:contentDescription="@string/profile_image" />
+
+            <TextView
+                android:id="@+id/text_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_text_nickname_leftMargin"
+                android:layout_marginTop="@dimen/setting_text_nickname_topMargin"
+                android:textColor="@color/notify_color"
+                android:textSize="@dimen/setting_text_nickname_font_size"
+                android:text="@string/setting_nickname"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_layout_nickname_height"
+                android:layout_marginTop="@dimen/setting_layout_nickname_topMargin"
+                android:layout_below="@+id/text_nickname"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_border_color" />
+
+                <EditText
+                    android:id="@+id/edit_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textColor="@color/notify_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:hint="@string/setting_text_placeholder"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/setting_edit_nickname_font_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_switch"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_layout_switch_height"
+                android:layout_marginTop="@dimen/setting_layout_switch_topMargin"
+                android:layout_below="@+id/layout_nickname"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:id="@+id/text_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_text_switch_leftMargin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/notify_color"
+                    android:textSize="@dimen/setting_text_switch_font_size"
+                    android:text="@string/setting_switch"/>
+
+                <ToggleButton
+                    android:id="@+id/toggle_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_toggle_switch_rightMargin"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_text_distance_leftMargin"
+                android:layout_marginTop="@dimen/setting_text_distance_topMargin"
+                android:layout_below="@+id/layout_switch"
+                android:textColor="@drawable/disable_button_color"
+                android:textSize="@dimen/setting_text_distance_font_size"
+                android:text="@string/setting_distance_desc"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_layout_slider_height"
+                android:layout_marginTop="@dimen/setting_layout_slider_topMargin"
+                android:layout_below="@+id/text_distance"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:id="@+id/text_dist_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_text_dist_min_leftMargin"
+                    android:layout_marginTop="@dimen/setting_text_dist_min_topMargin"
+                    android:textColor="@drawable/disable_button_color"
+                    android:textSize="@dimen/setting_text_dist_min_font_size"
+                    android:text="@string/setting_dist_min"/>
+
+                <TextView
+                    android:id="@+id/text_dist_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/setting_text_dist_current_topMargin"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@drawable/disable_button_color"
+                    android:textSize="@dimen/setting_text_dist_current_font_size"
+                    android:text="@string/setting_dist_min"/>
+
+                <TextView
+                    android:id="@+id/text_dist_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/setting_text_dist_max_rightMargin"
+                    android:layout_marginTop="@dimen/setting_text_dist_max_topMargin"
+                    android:textColor="@drawable/disable_button_color"
+                    android:textSize="@dimen/setting_text_dist_max_font_size"
+                    android:text="@string/setting_dist_max"/>
+                
+                <SeekBar
+                    android:id="@+id/seekbar_distance"
+                    android:layout_width="@dimen/setting_seekbar_distance_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/setting_seekbar_distance_topMargin" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_passchg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/setting_text_passchg_leftMargin"
+                android:layout_marginTop="@dimen/setting_text_passchg_topMargin"
+                android:layout_below="@+id/layout_slider"
+                android:textColor="@color/notify_color"
+                android:textSize="@dimen/setting_text_passchg_font_size"
+                android:text="@string/setting_password_change"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_layout_password_height"
+                android:layout_marginTop="@dimen/setting_layout_password_topMargin"
+                android:layout_below="@+id/text_passchg"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:id="@+id/text_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_text_password_leftMargin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/notify_color"
+                    android:textSize="@dimen/setting_text_password_font_size"
+                    android:text="@string/setting_password"/>
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/setting_edit_password_leftMargin"
+                    android:textColor="@color/notify_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:hint="@string/setting_password_placeholder"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/setting_edit_password_font_size"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_layout_cpassword_height"
+                android:layout_below="@+id/layout_password"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/setting_border_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/setting_border_color" />
+
+                <TextView
+                    android:id="@+id/text_cpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/setting_text_cpassword_leftMargin"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/notify_color"
+                    android:textSize="@dimen/setting_text_password_font_size"
+                    android:text="@string/setting_cpassword"/>
+
+                <EditText
+                    android:id="@+id/edit_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/setting_edit_cpassword_leftMargin"
+                    android:textColor="@color/notify_color"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:hint="@string/setting_password_placeholder"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/setting_edit_cpassword_font_size"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/but_logout"
+                android:layout_width="@dimen/setting_but_logout_width"
+                android:layout_height="@dimen/setting_but_logout_height"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layout_cpassword"
+                android:layout_marginTop="@dimen/setting_but_logout_margin_Top"                
+                android:textColor="@color/notify_color"
+                android:textSize="@dimen/setting_but_logout_font_size"
+                android:text="@string/setting_logout"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_layout_title_bar_height"
+        android:background="@color/navigation_bar_back_color" >
+
+        <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="@dimen/home_image_profile_width"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/home_image_profile_padding"
+            android:src="@drawable/btn_header_profile_bg"
+            android:contentDescription="@string/profile_image" />
+
+        <com.iliayugai.segmentedgroup.SegmentedGroup
+            android:id="@+id/segmented"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/home_segmented_height"
+            android:layout_centerInParent="true"
+            android:checkedButton="@+id/btn_all"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_alert"
+                android:layout_width="@dimen/home_btn_alert_width"
+                android:layout_height="match_parent"
+                android:text="@string/home_alert"
+                android:textSize="@dimen/home_btn_all_font_size"
+                style="@style/RadioButton" />
+
+            <RadioButton
+                android:id="@+id/btn_all"
+                android:layout_width="@dimen/home_btn_all_width"
+                android:layout_height="match_parent"
+                android:text="@string/home_all"
+                android:textSize="@dimen/home_btn_all_font_size"
+                style="@style/RadioButton" />
+
+            <RadioButton
+                android:id="@+id/btn_fun"
+                android:layout_width="@dimen/home_btn_fun_width"
+                android:layout_height="match_parent"
+                android:text="@string/home_fun"
+                android:textSize="@dimen/home_btn_fun_font_size"
+                style="@style/RadioButton" />
+
+        </com.iliayugai.segmentedgroup.SegmentedGroup>
+
+        <ImageView
+            android:id="@+id/image_notify"
+            android:layout_width="@dimen/home_image_notify_width"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/home_image_notify_padding"
+            android:src="@drawable/btn_header_notification_bg"
+            android:contentDescription="@string/profile_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view_hline1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline1_height"
+                android:background="@color/navigation_bar_vline1_color" />
+
+            <View
+                android:id="@+id/view_hline2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline2_height"
+                android:background="@color/navigation_bar_vline2_color" />
+
+            <View
+                android:id="@+id/view_hline3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline3_height"
+                android:background="@color/navigation_bar_vline3_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.iliayugai.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderBackground="@android:color/transparent"
+        ptr:ptrHeaderTextColor="@color/pull_down_color"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" />
+
+    <RelativeLayout
+        android:id="@+id/layout_record"
+        android:layout_width="@dimen/home_layout_record_size"
+        android:layout_height="@dimen/home_layout_record_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/home_layout_record_bottomMargin"
+        android:background="@drawable/home_record_bg"
+        android:visibility="gone">
+        
+        <com.iliayugai.zapp.view.CircularSeekBar
+            android:id="@+id/rec_seeker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/home_rec_seeker_margin"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/text_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_text_second_topMargin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/zapp_secont_test"
+            android:textColor="@color/notify_color"
+            android:textSize="@dimen/home_text_second_font_size" />
+
+        <ImageView
+            android:id="@+id/image_record_wave"
+            android:layout_width="@dimen/home_image_record_wave_width"
+            android:layout_height="@dimen/home_image_record_wave_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home_image_record_wave_topMargin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/record_wave"
+            android:contentDescription="@string/profile_image" />
+
+        <ImageView
+            android:id="@+id/image_record_ok"
+            android:layout_width="@dimen/home_image_record_ok_width"
+            android:layout_height="@dimen/home_image_record_ok_height"
+            android:layout_marginLeft="@dimen/home_image_record_ok_leftMargin"
+            android:layout_marginTop="@dimen/home_image_record_ok_topMargin"
+            android:paddingTop="@dimen/home_image_record_ok_paddingTop"
+            android:paddingBottom="@dimen/home_image_record_ok_paddingBottom"
+            android:adjustViewBounds="true"
+            android:src="@drawable/btn_record_ok_bg"
+            android:contentDescription="@string/profile_image" />
+
+        <ImageView
+            android:id="@+id/image_record_cancel"
+            android:layout_width="@dimen/home_image_record_cancel_width"
+            android:layout_height="@dimen/home_image_record_cancel_height"
+            android:layout_marginLeft="@dimen/home_image_record_cancel_leftMargin"
+            android:layout_marginTop="@dimen/home_image_record_cancel_topMargin"
+            android:paddingTop="@dimen/home_image_record_cancel_paddingTop"
+            android:paddingBottom="@dimen/home_image_record_cancel_paddingBottom"
+            android:adjustViewBounds="true"
+            android:src="@drawable/btn_record_cancel_bg"
+            android:contentDescription="@string/profile_image" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_record"
+        android:layout_width="@dimen/home_image_record_size"
+        android:layout_height="@dimen/home_image_record_size"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/btn_home_record_bg"
+        android:contentDescription="@string/profile_image" />
+
+    <View
+        android:id="@+id/view_popupmask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/black" />
+
+    <include layout="@layout/layout_share" />
+
+</RelativeLayout>

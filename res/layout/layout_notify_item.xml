@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.parse.ParseImageView
+        android:id="@+id/but_user"
+        android:layout_width="@dimen/notify_but_user_size"
+        android:layout_height="@dimen/notify_but_user_size"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/notify_but_user_leftMargin"
+        android:padding="@dimen/notify_but_user_padding"
+        android:src="@drawable/profile_photo_default"
+        android:contentDescription="@string/zapp_delete" />
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="@dimen/notify_text_content_width"
+        android:layout_height="@dimen/notify_text_content_height"
+        android:layout_marginLeft="@dimen/notify_text_content_leftMargin"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="@string/notify_test"
+        android:textColor="@color/notify_color"
+        android:textSize="@dimen/notify_text_content_font_size" />
+
+    <ImageView
+        android:id="@+id/but_play"
+        android:layout_width="@dimen/notify_but_play_size"
+        android:layout_height="@dimen/notify_but_play_size"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/notify_but_play_leftMargin"
+        android:padding="@dimen/notify_but_play_padding"
+        android:src="@drawable/btn_zapp_alert_play"
+        android:contentDescription="@string/zapp_delete" />
+
+</RelativeLayout>

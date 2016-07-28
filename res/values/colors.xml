@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- sign in view -->
+    <color name="signin_signup_color">#7786ab</color>
+
+    <!-- navigation bar -->
+    <color name="navigation_bar_back_color">#9586a4</color>
+    <color name="navigation_bar_alert_back_color">#ef506e</color>
+    <color name="navigation_bar_fun_back_color">#8aace4</color>
+    <color name="navigation_bar_vline1_color">#78747c</color>
+    <color name="navigation_bar_vline2_color">#99969b</color>
+    <color name="navigation_bar_vline3_color">#dad8d9</color>
+
+    <!-- zapp item -->
+    <color name="zapp_top_border_color">#e9e7e3</color>
+    <color name="zapp_back_color">#423b48</color>
+    <color name="zapp_by_color">#cccccc</color>
+    <color name="zapp_user_border_color">#f1efec</color>
+    <color name="zapp_user_back_color">#fcfcfc</color>
+    <color name="zapp_info_color">#aeaeae</color>
+    <color name="zapp_bottom_border_color1">#d4d3d0</color>
+    <color name="zapp_bottom_border_color2">#e8e7e4</color>
+
+    <!-- pull down color -->
+    <color name="pull_down_color">#7e8da2</color>
+
+    <!-- share view -->
+    <color name="share_back_color">#fcfcfc</color>
+    <color name="share_line_color">#e9e7e3</color>
+    <color name="share_cancel_pressed_color">#703c3c</color>
+    <color name="share_cancel_color">#ce6767</color>
+
+    <!-- notify activity -->
+    <color name="notify_color">#45535d</color>
+    <color name="notify_divider_color">#dddddd</color>
+
+    <!-- comment activity -->
+    <color name="comment_text_input_back_color">#fbfaf8</color>
+    
+    <!-- profile activity -->
+    <color name="profile_count_color">#ceccc7</color>
+
+    <!-- setting activity -->
+    <color name="setting_border_color">#f1f0ed</color>
+
+</resources>

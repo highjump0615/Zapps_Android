@@ -1,0 +1,635 @@
+<resources>
+
+    <!-- Splash Activity -->
+    <dimen name="splash_image_logo_width">60dp</dimen>
+    <dimen name="splash_image_logo_height">102dp</dimen>
+
+
+    <!-- Signin Activity -->
+    <dimen name="signin_image_logo_width">@dimen/splash_image_logo_width</dimen>
+    <dimen name="signin_image_logo_height">@dimen/splash_image_logo_height</dimen>
+    <dimen name="signin_image_logo_topMargin">30dp</dimen>
+    <dimen name="signin_image_logo_bottomMargin">20dp</dimen>
+
+    <dimen name="signin_layout_username_width">280dp</dimen>
+    <dimen name="signin_layout_username_height">44dp</dimen>
+    <dimen name="signin_layout_username_bottomMargin">5dp</dimen>
+
+    <dimen name="signin_text_username_leftMargin">59dp</dimen>
+    <dimen name="signin_text_username_rightMargin">11dp</dimen>
+    <dimen name="signin_text_username_font_size">13sp</dimen>
+
+    <dimen name="signin_layout_password_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signin_layout_password_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signin_layout_password_bottomMargin">@dimen/signin_layout_username_bottomMargin</dimen>
+
+    <dimen name="signin_text_password_leftMargin">@dimen/signin_text_username_leftMargin</dimen>
+    <dimen name="signin_text_password_rightMargin">@dimen/signin_text_username_rightMargin</dimen>
+    <dimen name="signin_text_password_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signin_btn_forget_width">198dp</dimen>
+    <dimen name="signin_btn_forget_height">30dp</dimen>
+    <dimen name="signin_btn_forget_bottomMargin">1dp</dimen>
+    <dimen name="signin_btn_forget_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signin_btn_signin_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signin_btn_signin_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signin_btn_signin_bottomMargin">@dimen/signin_btn_forget_bottomMargin</dimen>
+
+    <dimen name="signin_layout_social_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signin_layout_social_bottomMargin">15dp</dimen>
+
+    <dimen name="signin_btn_facebook_width">129dp</dimen>
+    <dimen name="signin_btn_facebook_height">@dimen/signin_layout_username_height</dimen>
+
+    <dimen name="signin_text_or_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signin_btn_twitter_width">@dimen/signin_btn_facebook_width</dimen>
+    <dimen name="signin_btn_twitter_height">@dimen/signin_layout_username_height</dimen>
+
+    <dimen name="signin_text_first_topMargin">6dp</dimen>
+    <dimen name="signin_text_first_bottomMargin">@dimen/signin_text_first_topMargin</dimen>
+    <dimen name="signin_text_first_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signin_btn_signup_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signin_btn_signup_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signin_btn_signup_bottomMargin">10dp</dimen>
+
+
+    <!-- Signup Activity -->
+    <dimen name="signup_layout_root_padding">20dp</dimen>
+
+    <dimen name="signup_layout_titlebar_height">44dp</dimen>
+
+    <dimen name="signup_btn_signin_width">58dp</dimen>
+    <dimen name="signup_btn_signin_font_size">15sp</dimen>
+
+    <dimen name="signup_text_title_font_size">@dimen/signup_btn_signin_font_size</dimen>
+
+    <dimen name="signup_layout_userinfo_bottomMargin">4dp</dimen>
+
+    <dimen name="signup_btn_photo_size">45dp</dimen>
+
+    <dimen name="signup_layout_username_width">227dp</dimen>
+    <dimen name="signup_layout_username_height">@dimen/signup_btn_photo_size</dimen>
+
+    <dimen name="signup_text_username_leftMargin">@dimen/signin_text_username_leftMargin</dimen>
+    <dimen name="signup_text_username_rightMargin">@dimen/signin_text_username_rightMargin</dimen>
+    <dimen name="signup_text_username_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signup_layout_email_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signup_layout_email_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signup_layout_email_bottomMargin">@dimen/signup_layout_userinfo_bottomMargin</dimen>
+
+    <dimen name="signup_text_email_leftMargin">@dimen/signin_text_username_leftMargin</dimen>
+    <dimen name="signup_text_email_rightMargin">@dimen/signin_text_username_rightMargin</dimen>
+    <dimen name="signup_text_email_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signup_layout_password_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signup_layout_password_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signup_layout_password_bottomMargin">@dimen/signup_layout_userinfo_bottomMargin</dimen>
+
+    <dimen name="signup_text_password_leftMargin">@dimen/signin_text_username_leftMargin</dimen>
+    <dimen name="signup_text_password_rightMargin">@dimen/signin_text_username_rightMargin</dimen>
+    <dimen name="signup_text_password_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signup_layout_cpassword_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signup_layout_cpassword_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signup_layout_cpassword_bottomMargin">@dimen/signup_layout_userinfo_bottomMargin</dimen>
+
+    <dimen name="signup_text_cpassword_leftMargin">@dimen/signin_text_username_leftMargin</dimen>
+    <dimen name="signup_text_cpassword_rightMargin">@dimen/signin_text_username_rightMargin</dimen>
+    <dimen name="signup_text_cpassword_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signup_btn_signup_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signup_btn_signup_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signup_btn_signup_bottomMargin">11dp</dimen>
+
+    <dimen name="signup_layout_or_bottomMargin">@dimen/signup_btn_signup_bottomMargin</dimen>
+
+    <dimen name="signup_text_or_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="signup_view_orleftline_width">115dp</dimen>
+    <dimen name="signup_view_orleftline_height">1dp</dimen>
+
+    <dimen name="signup_view_orrightline_width">@dimen/signup_view_orleftline_width</dimen>
+    <dimen name="signup_view_orrightline_height">@dimen/signup_view_orleftline_height</dimen>
+
+    <dimen name="signup_btn_facebook_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signup_btn_facebook_height">@dimen/signin_layout_username_height</dimen>
+    <dimen name="signup_btn_facebook_bottomMargin">@dimen/signin_layout_username_bottomMargin</dimen>
+
+    <dimen name="signup_btn_twitter_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="signup_btn_twitter_height">@dimen/signin_layout_username_height</dimen>
+
+
+    <!-- Forgot Activity -->
+    <dimen name="forget_layout_root_padding">@dimen/signup_layout_root_padding</dimen>
+
+    <dimen name="forget_layout_titlebar_height">@dimen/signup_layout_titlebar_height</dimen>
+
+    <dimen name="forget_btn_signin_width">@dimen/signup_btn_signin_width</dimen>
+
+    <dimen name="forget_btn_signin_font_size">@dimen/signup_btn_signin_font_size</dimen>
+
+    <dimen name="forget_text_title_font_size">@dimen/forget_btn_signin_font_size</dimen>
+
+    <dimen name="forget_layout_content_topMargin">80dp</dimen>
+
+    <dimen name="forget_text_desc_width">251dp</dimen>
+    <dimen name="forget_text_desc_bottomMargin">10dp</dimen>
+    <dimen name="forget_text_desc_font_size">@dimen/signin_text_username_font_size</dimen>
+
+    <dimen name="forget_layout_email_width">@dimen/signup_layout_email_width</dimen>
+    <dimen name="forget_layout_email_height">@dimen/signup_layout_email_height</dimen>
+    <dimen name="forget_layout_email_bottomMargin">10dp</dimen>
+
+    <dimen name="forget_text_email_leftMargin">@dimen/signup_text_email_leftMargin</dimen>
+    <dimen name="forget_text_email_rightMargin">@dimen/signup_text_email_rightMargin</dimen>
+    <dimen name="forget_text_email_font_size">@dimen/signup_text_email_font_size</dimen>
+
+    <dimen name="forget_btn_reset_width">@dimen/signin_layout_username_width</dimen>
+    <dimen name="forget_btn_reset_height">@dimen/signin_layout_username_height</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- Home Activity -->
+    <!-- Navigation Title Bar -->
+    <dimen name="home_layout_title_bar_height">47dp</dimen>
+
+    <dimen name="home_image_profile_width">@dimen/home_layout_title_bar_height</dimen>
+    <dimen name="home_image_profile_padding">15dp</dimen>
+
+    <dimen name="home_image_notify_width">@dimen/home_layout_title_bar_height</dimen>
+    <dimen name="home_image_notify_padding">15dp</dimen>
+
+    <dimen name="home_image_record_size">104dp</dimen>
+
+    <dimen name="home_view_hline1_height">1dp</dimen>
+    <dimen name="home_view_hline2_height">@dimen/home_view_hline1_height</dimen>
+    <dimen name="home_view_hline3_height">@dimen/home_view_hline1_height</dimen>
+
+    <dimen name="home_btn_alert_font_size">12sp</dimen>
+    <dimen name="home_btn_alert_width">68dp</dimen>
+
+    <dimen name="home_btn_all_font_size">@dimen/home_btn_alert_font_size</dimen>
+    <dimen name="home_btn_all_width">78dp</dimen>
+
+    <dimen name="home_btn_fun_font_size">@dimen/home_btn_alert_font_size</dimen>
+    <dimen name="home_btn_fun_width">68dp</dimen>
+
+    <dimen name="home_segmented_height">28dp</dimen>
+
+    <dimen name="home_layout_record_size">270dp</dimen>
+    <dimen name="home_layout_record_bottomMargin">-74dp</dimen>
+
+    <dimen name="home_rec_seeker_margin">5dp</dimen>
+
+    <dimen name="home_image_record_ok_width">64dp</dimen>
+    <dimen name="home_image_record_ok_height">52dp</dimen>
+    <dimen name="home_image_record_ok_leftMargin">20dp</dimen>
+    <dimen name="home_image_record_ok_topMargin">119dp</dimen>
+    <dimen name="home_image_record_ok_paddingTop">14dp</dimen>
+    <dimen name="home_image_record_ok_paddingBottom">14dp</dimen>
+
+    <dimen name="home_image_record_cancel_width">@dimen/home_image_record_ok_width</dimen>
+    <dimen name="home_image_record_cancel_height">@dimen/home_image_record_ok_height</dimen>
+    <dimen name="home_image_record_cancel_leftMargin">184dp</dimen>
+    <dimen name="home_image_record_cancel_topMargin">119dp</dimen>
+    <dimen name="home_image_record_cancel_paddingTop">14dp</dimen>
+    <dimen name="home_image_record_cancel_paddingBottom">14dp</dimen>
+
+    <dimen name="home_image_record_wave_width">87dp</dimen>
+    <dimen name="home_image_record_wave_height">18dp</dimen>
+    <dimen name="home_image_record_wave_topMargin">73dp</dimen>
+
+    <dimen name="home_text_second_topMargin">26dp</dimen>
+    <dimen name="home_text_second_font_size">30dp</dimen>
+
+
+    <!-- Zapp Item Layout -->
+    <dimen name="zapp_layout_root_paddingTop">2dp</dimen>
+    <dimen name="zapp_layout_root_paddingBottom">@dimen/zapp_layout_root_paddingTop</dimen>
+
+    <dimen name="zapp_layout_front_paddingTop">7dp</dimen>
+    <dimen name="zapp_layout_front_paddingBottom">7dp</dimen>
+
+    <dimen name="zapp_but_delete_width">58dp</dimen>
+    <dimen name="zapp_but_delete_height">60dp</dimen>
+    <dimen name="zapp_but_delete_leftMargin">127dp</dimen>
+    <dimen name="zapp_but_delete_paddingBottom">9dp</dimen>
+    <dimen name="zapp_but_delete_paddingTop">@dimen/zapp_but_delete_paddingBottom</dimen>
+
+    <dimen name="zapp_but_report_width">@dimen/zapp_but_delete_width</dimen>
+    <dimen name="zapp_but_report_height">@dimen/zapp_but_delete_height</dimen>
+    <dimen name="zapp_but_report_leftMargin">187dp</dimen>
+    <dimen name="zapp_but_report_paddingBottom">@dimen/zapp_but_delete_paddingBottom</dimen>
+    <dimen name="zapp_but_report_paddingTop">@dimen/zapp_but_delete_paddingBottom</dimen>
+
+    <dimen name="zapp_but_share_width">@dimen/zapp_but_delete_width</dimen>
+    <dimen name="zapp_but_share_height">@dimen/zapp_but_delete_height</dimen>
+    <dimen name="zapp_but_share_leftMargin">248dp</dimen>
+    <dimen name="zapp_but_share_paddingBottom">@dimen/zapp_but_delete_paddingBottom</dimen>
+    <dimen name="zapp_but_share_paddingTop">@dimen/zapp_but_delete_paddingBottom</dimen>
+
+    <dimen name="zapp_text_content_width">241dp</dimen>
+    <dimen name="zapp_text_content_font_size">12sp</dimen>
+    <dimen name="zapp_text_content_leftMargin">10dp</dimen>
+
+    <dimen name="zapp_layout_wave_width">281dp</dimen>
+    <dimen name="zapp_layout_wave_height">46dp</dimen>
+
+    <dimen name="zapp_image_wave_width">532dp</dimen>
+
+    <dimen name="zapp_but_play_size">50dp</dimen>
+    <dimen name="zapp_but_play_paddingBottom">3dp</dimen>
+    <dimen name="zapp_but_play_paddingTop">@dimen/zapp_but_play_paddingBottom</dimen>
+    <dimen name="zapp_but_play_leftMargin">259dp</dimen>
+
+    <dimen name="zapp_layout_user_height">45dp</dimen>
+
+    <dimen name="zapp_but_user_size">45dp</dimen>
+    <dimen name="zapp_but_user_leftMargin">8dp</dimen>
+    <dimen name="zapp_but_user_padding">5dp</dimen>
+
+    <dimen name="zapp_text_zappby_leftMargin">57dp</dimen>
+    <dimen name="zapp_text_zappby_leftTop">8dp</dimen>
+    <dimen name="zapp_text_zappby_font_size">10sp</dimen>
+
+    <dimen name="zapp_text_username_width">145dp</dimen>
+    <dimen name="zapp_text_username_leftMargin">57dp</dimen>
+    <dimen name="zapp_text_username_topMargin">19dp</dimen>
+    <dimen name="zapp_text_username_font_size">13sp</dimen>
+
+    <dimen name="zapp_but_like_size">35dp</dimen>
+    <dimen name="zapp_but_like_leftMargin">218dp</dimen>
+    <dimen name="zapp_but_like_paddingBottom">6dp</dimen>
+    <dimen name="zapp_but_like_paddingTop">6dp</dimen>
+
+    <dimen name="zapp_but_comment_size">35dp</dimen>
+    <dimen name="zapp_but_comment_leftMargin">270dp</dimen>
+    <dimen name="zapp_but_comment_paddingBottom">5dp</dimen>
+    <dimen name="zapp_but_comment_paddingTop">5dp</dimen>
+    
+    <dimen name="zapp_text_commentnum_size">@dimen/zapp_but_comment_size</dimen>
+    <dimen name="zapp_text_commentnum_leftMargin">@dimen/zapp_but_comment_leftMargin</dimen>
+    <dimen name="zapp_text_commentnum_paddingTop">5dp</dimen>
+    <dimen name="zapp_text_commentnum_paddingBottom">7.5dp</dimen>
+    <dimen name="zapp_text_commentnum_font_size">10sp</dimen>
+
+    <dimen name="zapp_layout_info_height">29dp</dimen>
+
+    <dimen name="zapp_img_location_width">9dp</dimen>
+    <dimen name="zapp_img_location_height">11dp</dimen>
+    <dimen name="zapp_img_location_leftMargin">26dp</dimen>
+
+    <dimen name="zapp_text_distance_leftMargin">41dp</dimen>
+    <dimen name="zapp_text_distance_font_size">11sp</dimen>
+
+    <dimen name="zapp_img_time_size">10dp</dimen>
+    <dimen name="zapp_img_time_leftMargin">114dp</dimen>
+
+    <dimen name="zapp_text_time_leftMargin">129dp</dimen>
+    <dimen name="zapp_text_time_font_size">@dimen/zapp_text_distance_font_size</dimen>
+
+    <dimen name="zapp_img_playnum_size">9dp</dimen>
+    <dimen name="zapp_img_playnum_leftMargin">193dp</dimen>
+
+    <dimen name="zapp_text_playnum_leftMargin">208dp</dimen>
+    <dimen name="zapp_text_playnum_font_size">@dimen/zapp_text_distance_font_size</dimen>
+
+    <dimen name="zapp_img_likenum_size">10dp</dimen>
+    <dimen name="zapp_img_likenum_leftMargin">259dp</dimen>
+
+    <dimen name="zapp_text_likenum_leftMargin">274dp</dimen>
+    <dimen name="zapp_text_likenum_font_size">@dimen/zapp_text_distance_font_size</dimen>
+
+
+    <!-- Share Layout -->
+    <dimen name="share_layout_root_height">250dp</dimen>
+
+    <dimen name="share_but_facebook_height">50dp</dimen>
+    <dimen name="share_but_facebook_topMargin">0dp</dimen>
+    <dimen name="share_but_facebook_paddingBottom">17dp</dimen>
+    <dimen name="share_but_facebook_paddingTop">17dp</dimen>
+
+    <dimen name="share_view_hline1_width">280dp</dimen>
+    <dimen name="share_view_hline1_topMargin">49dp</dimen>
+
+    <dimen name="share_but_twitter_height">@dimen/share_but_facebook_height</dimen>
+    <dimen name="share_but_twitter_topMargin">50dp</dimen>
+    <dimen name="share_but_twitter_paddingBottom">17dp</dimen>
+    <dimen name="share_but_twitter_paddingTop">17dp</dimen>
+
+    <dimen name="share_view_hline2_width">@dimen/share_view_hline1_width</dimen>
+    <dimen name="share_view_hline2_topMargin">99dp</dimen>
+
+    <dimen name="share_but_email_height">@dimen/share_but_facebook_height</dimen>
+    <dimen name="share_but_email_topMargin">100dp</dimen>
+    <dimen name="share_but_email_paddingBottom">17dp</dimen>
+    <dimen name="share_but_email_paddingTop">17dp</dimen>
+
+    <dimen name="share_view_hline3_width">@dimen/share_view_hline1_width</dimen>
+    <dimen name="share_view_hline3_topMargin">149dp</dimen>
+
+    <dimen name="share_but_link_height">@dimen/share_but_facebook_height</dimen>
+    <dimen name="share_but_link_topMargin">150dp</dimen>
+    <dimen name="share_but_link_paddingBottom">17dp</dimen>
+    <dimen name="share_but_link_paddingTop">17dp</dimen>
+
+    <dimen name="share_view_hline4_width">@dimen/share_view_hline1_width</dimen>
+    <dimen name="share_view_hline4_topMargin">199dp</dimen>
+
+    <dimen name="share_but_cancel_height">@dimen/share_but_facebook_height</dimen>
+    <dimen name="share_but_cancel_font_size">13sp</dimen>
+    <dimen name="share_but_cancel_topMargin">200dp</dimen>
+
+
+    <!-- notify activity -->
+    <dimen name="notify_layout_title_bar_height">47dp</dimen>
+
+    <dimen name="notify_but_back_width">@dimen/notify_layout_title_bar_height</dimen>
+    <dimen name="notify_but_back_padding">12dp</dimen>
+
+    <dimen name="notify_text_title_font_size">15sp</dimen>
+
+    <dimen name="notify_segmented_height">28dp</dimen>
+    <dimen name="notify_segmented_topMargin">5dp</dimen>
+
+    <dimen name="notify_btn_segmentlike_width">151dp</dimen>
+    <dimen name="notify_btn_segmentlike_font_size">12sp</dimen>
+
+    <dimen name="notify_btn_segmentcomment_width">@dimen/notify_btn_segmentlike_width</dimen>
+    <dimen name="notify_btn_segmentcomment_font_size">@dimen/notify_btn_segmentlike_font_size</dimen>
+
+    <dimen name="notify_pull_refresh_list_topMargin">@dimen/notify_segmented_topMargin</dimen>
+
+
+    <!-- notify list layout -->
+    <dimen name="notify_but_user_size">50dp</dimen>
+    <dimen name="notify_but_user_leftMargin">6dp</dimen>
+    <dimen name="notify_but_user_padding">@dimen/zapp_but_user_padding</dimen>
+
+    <dimen name="notify_text_content_width">213dp</dimen>
+    <dimen name="notify_text_content_height">21dp</dimen>
+    <dimen name="notify_text_content_leftMargin">59dp</dimen>
+    <dimen name="notify_text_content_font_size">11sp</dimen>
+
+    <dimen name="notify_but_play_size">50dp</dimen>
+    <dimen name="notify_but_play_leftMargin">269dp</dimen>
+    <dimen name="notify_but_play_padding">10dp</dimen>
+
+
+    <!-- comment activity -->
+    <dimen name="comment_layout_title_bar_height">47dp</dimen>
+
+    <dimen name="comment_text_title_font_size">15sp</dimen>
+
+    <dimen name="comment_but_done_width">66dp</dimen>
+    <dimen name="comment_but_done_font_size">15sp</dimen>
+
+    <dimen name="comment_but_user_size">50dp</dimen>
+    <dimen name="comment_but_user_leftMargin">5dp</dimen>
+    <dimen name="comment_but_user_topMargin">3dp</dimen>
+    <dimen name="comment_but_user_padding">@dimen/zapp_but_user_padding</dimen>
+
+    <dimen name="comment_text_username_font_size">13sp</dimen>
+    <dimen name="comment_text_username_width">207dp</dimen>
+    <dimen name="comment_text_username_height">21dp</dimen>
+    <dimen name="comment_text_username_leftMargin">58dp</dimen>
+    <dimen name="comment_text_username_topMargin">7dp</dimen>
+    
+    <dimen name="comment_image_recording_size">15dp</dimen>
+    <dimen name="comment_image_recording_leftMargin">20dp</dimen>
+    
+    <dimen name="comment_text_recording_leftMargin">10dp</dimen>
+    <dimen name="comment_text_recording_font_size">12sp</dimen>
+
+    <dimen name="comment_text_content_width">@dimen/comment_text_username_width</dimen>
+    <dimen name="comment_text_content_topMargin">1dp</dimen>
+    <dimen name="comment_text_content_leftMargin">@dimen/comment_text_username_leftMargin</dimen>
+    <dimen name="comment_text_content_font_size">12sp</dimen>
+
+    <dimen name="comment_but_play_size">50dp</dimen>
+    <dimen name="comment_but_play_leftMargin">264dp</dimen>
+    <dimen name="comment_but_play_topMargin">3dp</dimen>
+    <dimen name="comment_but_play_padding">8dp</dimen>
+    
+    <dimen name="comment_but_rec_play_size">38dp</dimen>
+    <dimen name="comment_but_rec_play_padding">6.5dp</dimen>
+
+    <dimen name="comment_layout_textinput_width">260dp</dimen>
+    <dimen name="comment_layout_textinput_height">38dp</dimen>
+    <dimen name="comment_layout_textinput_leftMargin">7dp</dimen>
+
+    <dimen name="comment_but_record_size">51dp</dimen>
+    <dimen name="comment_but_record_leftMargin">269dp</dimen>
+    <dimen name="comment_but_record_padding">7dp</dimen>
+
+    <dimen name="comment_edit_comment_leftMargin">10dp</dimen>
+    <dimen name="comment_edit_comment_rightMargin">10dp</dimen>
+    <dimen name="comment_edit_comment_font_size">12sp</dimen>
+
+
+    <!-- profile activity -->
+    <dimen name="profile_layout_title_bar_height">47dp</dimen>
+        
+    <dimen name="profile_pager_photo_size">320dp</dimen>
+    <dimen name="profile_pager_photo_topMargin">-83dp</dimen>
+    
+    <dimen name="profile_layout_pager_height">154dp</dimen>
+
+    <dimen name="profile_but_setting_width">@dimen/profile_layout_title_bar_height</dimen>
+    <dimen name="profile_but_setting_padding">14dp</dimen>
+
+    <dimen name="profile_text_title_font_size">15dp</dimen>
+
+    <dimen name="profile_but_zapp_width">@dimen/profile_layout_title_bar_height</dimen>
+    <dimen name="profile_but_zapp_padding">12dp</dimen>
+
+    <dimen name="profile_indicator_photo_topMargin">130dp</dimen>
+
+    <dimen name="profile_layout_buttons_height">44dp</dimen>
+
+    <dimen name="profile_but_optionmine_width">160dp</dimen>
+    <dimen name="profile_but_optionliked_width">@dimen/profile_but_optionmine_width</dimen>
+    
+    <dimen name="profile_text_minenum_width">42dp</dimen>
+    <dimen name="profile_text_minenum_leftMargin">120dp</dimen>
+    <dimen name="profile_text_minenum_font_size">12sp</dimen>
+    
+    <dimen name="profile_text_likenum_width">42dp</dimen>
+    <dimen name="profile_text_likenum_font_size">12sp</dimen>
+    
+    <dimen name="profile_text_title_width">240dp</dimen>
+    
+
+    <!-- setting activity -->
+    <dimen name="setting_layout_title_bar_height">47dp</dimen>
+
+    <dimen name="setting_text_title_font_size">15sp</dimen>
+
+    <dimen name="setting_but_save_width">66dp</dimen>
+    <dimen name="setting_but_save_font_size">15sp</dimen>
+
+    <dimen name="setting_but_cancel_width">@dimen/setting_but_save_width</dimen>
+    <dimen name="setting_but_cancel_font_size">@dimen/setting_but_save_font_size</dimen>
+
+    <dimen name="setting_img_photomain_size">145dp</dimen>
+    <dimen name="setting_img_photomain_leftMargin">10dp</dimen>
+    <dimen name="setting_img_photomain_topMargin">8dp</dimen>
+
+    <dimen name="setting_img_photo1_size">65dp</dimen>
+    <dimen name="setting_img_photo1_leftMargin">168dp</dimen>
+    <dimen name="setting_img_photo1_topMargin">8dp</dimen>
+
+    <dimen name="setting_img_deletephoto1_size">28dp</dimen>
+    <dimen name="setting_img_deletephoto1_leftMargin">209dp</dimen>
+    <dimen name="setting_img_deletephoto1_topMargin">50dp</dimen>
+
+    <dimen name="setting_img_photo2_size">65dp</dimen>
+    <dimen name="setting_img_photo2_leftMargin">244dp</dimen>
+    <dimen name="setting_img_photo2_topMargin">8dp</dimen>
+
+    <dimen name="setting_img_deletephoto2_size">@dimen/setting_img_deletephoto1_size</dimen>
+    <dimen name="setting_img_deletephoto2_leftMargin">285dp</dimen>
+    <dimen name="setting_img_deletephoto2_topMargin">50dp</dimen>
+
+    <dimen name="setting_img_photo3_size">65dp</dimen>
+    <dimen name="setting_img_photo3_leftMargin">168dp</dimen>
+    <dimen name="setting_img_photo3_topMargin">88dp</dimen>
+
+    <dimen name="setting_img_deletephoto3_size">@dimen/setting_img_deletephoto1_size</dimen>
+    <dimen name="setting_img_deletephoto3_leftMargin">209dp</dimen>
+    <dimen name="setting_img_deletephoto3_topMargin">128dp</dimen>
+
+    <dimen name="setting_img_photo4_size">65dp</dimen>
+    <dimen name="setting_img_photo4_leftMargin">244dp</dimen>
+    <dimen name="setting_img_photo4_topMargin">88dp</dimen>
+
+    <dimen name="setting_img_deletephoto4_size">@dimen/setting_img_deletephoto1_size</dimen>
+    <dimen name="setting_img_deletephoto4_leftMargin">285dp</dimen>
+    <dimen name="setting_img_deletephoto4_topMargin">128dp</dimen>
+
+    <dimen name="setting_text_nickname_leftMargin">10dp</dimen>
+    <dimen name="setting_text_nickname_topMargin">165dp</dimen>
+    <dimen name="setting_text_nickname_font_size">11sp</dimen>
+
+    <dimen name="setting_layout_nickname_topMargin">2dp</dimen>
+    <dimen name="setting_layout_nickname_height">52dp</dimen>
+    <dimen name="setting_edit_nickname_font_size">15sp</dimen>
+
+    <dimen name="setting_layout_switch_topMargin">10dp</dimen>
+    <dimen name="setting_layout_switch_height">@dimen/setting_layout_nickname_height</dimen>
+
+    <dimen name="setting_text_switch_leftMargin">12dp</dimen>
+    <dimen name="setting_text_switch_font_size">15sp</dimen>
+
+    <dimen name="setting_toggle_switch_rightMargin">12dp</dimen>
+
+    <dimen name="setting_text_distance_leftMargin">10dp</dimen>
+    <dimen name="setting_text_distance_topMargin">10dp</dimen>
+    <dimen name="setting_text_distance_font_size">11sp</dimen>
+
+    <dimen name="setting_layout_slider_height">62dp</dimen>
+    <dimen name="setting_layout_slider_topMargin">2dp</dimen>
+
+    <dimen name="setting_text_dist_min_leftMargin">9dp</dimen>
+    <dimen name="setting_text_dist_min_topMargin">4dp</dimen>
+    <dimen name="setting_text_dist_min_font_size">12sp</dimen>
+
+    <dimen name="setting_text_dist_current_topMargin">@dimen/setting_text_dist_min_topMargin</dimen>
+    <dimen name="setting_text_dist_current_font_size">12sp</dimen>
+
+    <dimen name="setting_text_dist_max_rightMargin">@dimen/setting_text_dist_min_leftMargin</dimen>
+    <dimen name="setting_text_dist_max_topMargin">@dimen/setting_text_dist_min_topMargin</dimen>
+    <dimen name="setting_text_dist_max_font_size">12sp</dimen>
+
+    <dimen name="setting_seekbar_distance_width">307dp</dimen>
+    <dimen name="setting_seekbar_distance_topMargin">25dp</dimen>
+
+    <dimen name="setting_text_passchg_topMargin">10dp</dimen>
+    <dimen name="setting_text_passchg_leftMargin">10dp</dimen>
+    <dimen name="setting_text_passchg_font_size">11sp</dimen>
+
+    <dimen name="setting_layout_password_height">45dp</dimen>
+    <dimen name="setting_layout_password_topMargin">2dp</dimen>
+
+    <dimen name="setting_text_password_leftMargin">9dp</dimen>
+    <dimen name="setting_text_password_font_size">15sp</dimen>
+    <dimen name="setting_edit_password_leftMargin">153dp</dimen>
+    <dimen name="setting_edit_password_font_size">15sp</dimen>
+
+    <dimen name="setting_layout_cpassword_height">@dimen/setting_layout_password_height</dimen>
+
+    <dimen name="setting_text_cpassword_leftMargin">9dp</dimen>
+    <dimen name="setting_text_cpassword_font_size">15sp</dimen>
+    <dimen name="setting_edit_cpassword_leftMargin">153dp</dimen>
+    <dimen name="setting_edit_cpassword_font_size">15sp</dimen>
+
+    <dimen name="setting_but_logout_width">280dp</dimen>
+    <dimen name="setting_but_logout_height">37dp</dimen>
+    <dimen name="setting_but_logout_margin_Top">10dp</dimen>
+    <dimen name="setting_but_logout_font_size">13dp</dimen>
+
+
+    <!-- post dialog -->
+    <dimen name="post_layout_root_width">297dp</dimen>
+    <dimen name="post_layout_root_height">395dp</dimen>
+
+    <dimen name="post_but_post_width">290dp</dimen>
+    <dimen name="post_but_post_height">50dp</dimen>
+    <dimen name="post_but_post_leftMargin">2dp</dimen>
+
+    <dimen name="post_but_post_play_size">60dp</dimen>
+    <dimen name="post_but_post_play_leftMargin">20dp</dimen>
+
+    <dimen name="post_edit_post_desc_width">176dp</dimen>
+    <dimen name="post_edit_post_desc_height">67dp</dimen>
+    <dimen name="post_edit_post_desc_leftMargin">97dp</dimen>
+    <dimen name="post_edit_post_desc_font_size">14sp</dimen>
+
+    <dimen name="post_view_vline1_width">250dp</dimen>
+    <dimen name="post_view_vline2_width">@dimen/post_view_vline1_width</dimen>
+    <dimen name="post_view_vline3_width">@dimen/post_view_vline1_width</dimen>
+
+    <dimen name="post_layout_segment_width">246dp</dimen>
+    <dimen name="post_layout_segment_height">40dp</dimen>
+
+    <dimen name="post_but_seg_alert_width">131dp</dimen>
+    <dimen name="post_but_seg_fun_width">@dimen/post_but_seg_alert_width</dimen>
+
+    <dimen name="post_text_broad_dist_font_size">10sp</dimen>
+
+    <dimen name="post_text_broad_dist_topMargin">10dp</dimen>
+    <dimen name="post_text_dist_current_font_size">12sp</dimen>
+    <dimen name="post_text_dist_current_topMargin">8dp</dimen>
+
+    <dimen name="post_text_dist_min_topMargin">45dp</dimen>
+    <dimen name="post_text_dist_min_leftMargin">12dp</dimen>
+    <dimen name="post_text_dist_min_font_size">12sp</dimen>
+
+    <dimen name="post_text_dist_max_topMargin">@dimen/post_text_dist_min_topMargin</dimen>
+    <dimen name="post_text_dist_max_rightMargin">22dp</dimen>
+    <dimen name="post_text_dist_max_font_size">@dimen/post_text_dist_min_font_size</dimen>
+
+    <dimen name="post_seekbar_distance_width">264dp</dimen>
+    <dimen name="post_seekbar_distance_bottomMargin">7dp</dimen>
+
+    <dimen name="post_text_also_share_topMargin">10dp</dimen>
+    <dimen name="post_text_also_share_font_size">10sp</dimen>
+
+    <dimen name="post_but_facebook_width">120dp</dimen>
+    <dimen name="post_but_facebook_height">38dp</dimen>
+    <dimen name="post_but_facebook_leftMargin">17dp</dimen>
+    <dimen name="post_but_facebook_bottomMargin">5dp</dimen>
+
+    <dimen name="post_but_twitter_width">@dimen/post_but_facebook_width</dimen>
+    <dimen name="post_but_twitter_height">@dimen/post_but_facebook_height</dimen>
+    <dimen name="post_but_twitter_leftMargin">153dp</dimen>
+    <dimen name="post_but_twitter_bottomMargin">@dimen/post_but_facebook_bottomMargin</dimen>
+
+
+</resources>

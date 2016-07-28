@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Zapps</string>
+    
+    <string name="parse_app_id">iWHFfoAM40p5dxk6H10QleBuyUcnRzn1YzVBBQCS</string>
+    <string name="parse_client_key">BHafxghjlo6MdCfFsF6fNw14Md4Gn5ieQPf0r4zB</string>
+
+    <string name="facebook_app_id">269316603255379</string>
+    <string name="twitter_consumer_key">3KEaBWSnU7YrCxsAsr3oDY10i</string>
+    <string name="twitter_consumer_secret">DU4zpZ7M4YWZr1BBdj38aRqQ0WTxg8ho4NyHNjGo5rfDLT9fG1</string>
+
+    <!-- signin activity -->
+    <string name="signin_first">First time using Zapp?</string>
+    <string name="signin_or">OR</string>
+    <string name="signin_username">USERNAME</string>
+    <string name="signin_password">PASSWORD</string>
+    <string name="signin_forget">Forgot your password?</string>
+
+    <!-- signup activity -->
+    <string name="signup_signin_but">Log in</string>
+    <string name="signup_title">Sign up</string>
+    <string name="signup_email">EMAIL ADDRESS</string>
+    <string name="signup_cpassword">REPEAT PASSWORD</string>
+
+    <!-- forgot password activity -->
+    <string name="forgot_title">Password Recovery</string>
+    <string name="forgot_desc">Enter the email address associated with your Zapp account.</string>
+
+    <!-- home activity -->
+    <string name="home_alert">Alerts</string>
+    <string name="home_all">All Zapps</string>
+    <string name="home_fun">Fun</string>
+    <string name="zapp_test">Sed posuere consectetur est at lobortis elite. Vestibulum id ligula porta felis euismod serar semper. Donec sed odio dui.</string>
+    <string name="zapp_username_test">Natalie Portman</string>
+    <string name="zapp_by">zapped by</string>
+    <string name="zapp_distance_test">1.1km</string>
+    <string name="zapp_time_test">13 min</string>
+    <string name="zapp_playnum_test">233</string>
+    <string name="zapp_likenum_test">20</string>
+    <string name="zapp_secont_test">0.00s</string>
+
+    <!-- share layout -->
+    <string name="share_cancel">Cancel</string>
+
+    <!-- notify activity -->
+    <string name="notify_title">Notifications</string>
+    <string name="notify_test">Natalie Portman liked your zapp</string>
+    <string name="notify_like">Likes</string>
+    <string name="notify_comment">Comments</string>
+
+    <!-- comment activity -->
+    <string name="comment_title">Thread</string>
+    <string name="comment_done">Done</string>
+    <string name="comment_test">World class App!! haha~~</string>
+    <string name="comment_recording">Recording&#8230;</string>
+    <string name="comment_text_placeholder">Write a comment</string>
+    
+    <!-- profile activity -->
+    <string name="zapp_profile_test">Profile</string>
+
+    <!-- setting activity -->
+    <string name="setting_title">Profile Settings</string>
+    <string name="setting_save">Save</string>
+    <string name="setting_nickname">NICKNAME</string>
+    <string name="setting_text_placeholder">Input your nick name</string>
+    <string name="setting_switch">I want Zapps around me only</string>
+    <string name="setting_distance_desc">ZAPP FEED - DISTANCE</string>
+    <string name="setting_dist_min">1KM</string>
+    <string name="setting_dist_max">100KM</string>
+    <string name="setting_password_change">PASSWORD CHANGE</string>
+    <string name="setting_password">New Password</string>
+    <string name="setting_cpassword">Confirm Password</string>
+    <string name="setting_password_placeholder">Input here</string>
+    <string name="setting_logout">LOG OUT</string>
+
+    <!-- post dialog -->
+    <string name="post_desc">Add a description&#8230;</string>
+    <string name="post_broad_dist">BROADCASTING DISTANCE</string>
+    <string name="post_also_share">ALSO SHARE ON</string>
+
+    <!-- unnecessary strings -->
+    <string name="logo_image">Zapp</string>
+    <string name="photo_image">Photo</string>
+    <string name="profile_image">Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="zapp_delete">Delete</string>
+    <string name="title_activity_notify">Notify</string>
+    <string name="hello_world">Hello world!</string>
+    
+</resources>

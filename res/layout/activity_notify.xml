@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_layout_title_bar_height"
+        android:background="@color/navigation_bar_back_color" >
+
+        <ImageView
+            android:id="@+id/but_back"
+            android:layout_width="@dimen/notify_but_back_width"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/notify_but_back_padding"
+            android:src="@drawable/btn_header_backhome_bg"
+            android:contentDescription="@string/profile_image" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/notify_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/notify_text_title_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/view_hline1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline1_height"
+                android:background="@color/navigation_bar_vline1_color" />
+
+            <View
+                android:id="@+id/view_hline2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline2_height"
+                android:background="@color/navigation_bar_vline2_color" />
+
+            <View
+                android:id="@+id/view_hline3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_view_hline3_height"
+                android:background="@color/navigation_bar_vline3_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.iliayugai.segmentedgroup.SegmentedGroup
+        android:id="@+id/segmented"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/notify_segmented_height"
+        android:layout_below="@+id/layout_title_bar"
+        android:layout_marginTop="@dimen/notify_segmented_topMargin"
+        android:layout_centerHorizontal="true"
+        android:checkedButton="@+id/btn_segmentlike"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_segmentlike"
+            android:layout_width="@dimen/notify_btn_segmentlike_width"
+            android:layout_height="match_parent"
+            android:text="@string/notify_like"
+            android:textSize="@dimen/notify_btn_segmentlike_font_size"
+            style="@style/RadioButton" />
+
+        <RadioButton
+            android:id="@+id/btn_segmentcomment"
+            android:layout_width="@dimen/notify_btn_segmentcomment_width"
+            android:layout_height="match_parent"
+            android:text="@string/notify_comment"
+            android:textSize="@dimen/notify_btn_segmentcomment_font_size"
+            style="@style/RadioButton" />
+
+    </com.iliayugai.segmentedgroup.SegmentedGroup>
+
+    <com.iliayugai.pulltorefresh.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/segmented"
+        android:layout_marginTop="@dimen/notify_pull_refresh_list_topMargin"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="1dp"
+        android:divider="@color/notify_divider_color"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderBackground="@android:color/transparent"
+        ptr:ptrHeaderTextColor="@color/pull_down_color"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both" />
+
+
+</RelativeLayout>

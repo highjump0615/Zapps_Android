@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.parse.ParseImageView
+        android:id="@+id/but_user"
+        android:layout_width="@dimen/comment_but_user_size"
+        android:layout_height="@dimen/comment_but_user_size"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="@dimen/comment_but_user_leftMargin"
+        android:layout_marginTop="@dimen/comment_but_user_topMargin"
+        android:padding="@dimen/comment_but_user_padding"
+        android:src="@drawable/profile_photo_default"
+        android:contentDescription="@string/zapp_delete" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="@dimen/comment_text_username_width"
+        android:layout_height="@dimen/comment_text_username_height"
+        android:layout_marginTop="@dimen/comment_text_username_topMargin"
+        android:layout_marginLeft="@dimen/notify_text_content_leftMargin"
+        android:gravity="center_vertical"
+        android:text="@string/zapp_username_test"
+        android:textColor="@color/notify_color"
+        android:textSize="@dimen/comment_text_username_font_size" />
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="@dimen/comment_text_content_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_username"
+        android:layout_marginTop="@dimen/comment_text_content_topMargin"
+        android:layout_marginLeft="@dimen/comment_text_content_leftMargin"
+        android:text="@string/comment_test"
+        android:textColor="@color/notify_color"
+        android:textSize="@dimen/comment_text_content_font_size" />
+
+    <ImageView
+        android:id="@+id/but_play"
+        android:layout_width="@dimen/notify_but_play_size"
+        android:layout_height="@dimen/notify_but_play_size"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="@dimen/comment_but_play_leftMargin"
+        android:layout_marginTop="@dimen/comment_but_play_topMargin"
+        android:padding="@dimen/comment_but_play_padding"
+        android:src="@drawable/btn_zapp_alert_play"
+        android:contentDescription="@string/zapp_delete" />
+
+</RelativeLayout>
